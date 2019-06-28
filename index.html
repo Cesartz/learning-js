@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulario</title>
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+  <div>
+    <h1>Formulario</h1>
+  </div>
+
+  <div class="form_container">
+    <form class="form">
+      <div class="form_row">
+        <label class="form_label" for="name">Nombre</label>
+        <input class="form_input" id="name" type="text" placeholder="Nombre">
+      </div>
+      <div class="form_row">
+        <label class="form_label" for="lastName">Apellido</label>
+        <input class="form_input" id="lastName" type="text" placeholder="Apellido">
+      </div>
+      <div class="form_row">
+        <label class="form_label" for="age">Edad</label>
+        <input class="form_input" id="age" type="text" placeholder="Edad">
+      </div>
+      <div class="form_row">
+        <label class="form_label" for="phone">Teléfono</label>
+        <input class="form_input" id="phone" type="text" placeholder="Teléfono">
+      </div>
+      <div class="form_row">
+        <button type="button" id="buttonEnviar" class="form_button">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Overlay -->
+  <div class="alert_overlay"></div>
+
+  <!-- Alerta -->
+  <div class="alert">Mensaje de alerta</div>
+
+
+  <!-- Scripts van aquí -->
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  background-color: rgb(27, 72, 111);
+  color: rgb(255, 174, 0);
+}
+
+.form_container {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.form {
+  width: 100%;
+}
+
+.form_row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.form_label {
+  margin-bottom: 10px;
+}
+
+.form_input {
+  border: none;
+  background-color: rgb(17, 46, 72);
+  height: 30px;
+  padding: 5px;
+  border-radius: 4px;
+  outline: none;
+  color: white;
+  font-size: 20px;
+}
+
+.form_input::placeholder {
+  color: rgb(118, 81, 0);
+}
+
+.form_button {
+  border: none;
+  background-color: rgb(255, 174, 0);
+  width: 200px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all ease 0.3s;
+}
+
+.form_button:hover {
+  background-color: rgb(219, 150, 2);
+  font-size: 16px;
+}
+
+.form_button:active {
+  background-color: rgb(255, 216, 131);
+  font-size: 20px;
+}
+
+.alert_overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  display: none;
+}
+
+.alert_overlay.open {
+  display: block;
+}
+
+.alert {
+  background-color: rgb(27, 72, 111);
+  color: rgb(219, 150, 2);
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  top: -300px;
+  left: calc(50vw - 150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  text-align: center;
+  transition: all ease 0.3s;
+}
+
+.alert.open {
+  top: calc(50vh - 150px);
+}
